@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ 
+<link rel = "stylesheet" href = "css/index.css">
+
+</head>
+
+<body>
+<div id = "post">
+
+    <input id = "nombre" placeholder="Su nombre aqui" type="text">
+
+    <input id = "frase" placeholder="que estas pensando?" type="text">
+
+    <button id = "botonpublicar"> Publicar </button>
+    
+</div>
+
+
+<div id = "profile">
+
+</div>
+
+</body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQgXtiuP8MmrLW41m897MPP4D7uG20DZ8",
+    authDomain: "semanaonce-fb635.firebaseapp.com",
+    projectId: "semanaonce-fb635",
+    storageBucket: "semanaonce-fb635.appspot.com",
+    messagingSenderId: "27092604010",
+    appId: "1:27092604010:web:5e9336405d3ce59e1d6613",
+    measurementId: "G-BC9GYHJS05"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+const database  = firebase.database();
+
+</script>
+
+<script src = "js/muro.js"></script>
+
+<script src = "js/index.js"></script>
+
+</html>
